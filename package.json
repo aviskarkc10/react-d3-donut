@@ -1,7 +1,7 @@
 {
   "name": "react-d3-donut",
   "version": "1.0.0",
-  "description": "react-d3-donut React component",
+  "description": "A react donut chart component using d3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -19,7 +19,6 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "16.x"
   },
@@ -29,10 +28,12 @@
     "react-dom": "^16.4.2"
   },
   "author": "",
-  "homepage": "",
   "license": "MIT",
   "repository": "",
   "keywords": [
-    "react-component"
+    "react-component",
+    "visualisation",
+    "donut chart",
+    "d3"
   ]
 }
