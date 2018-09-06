@@ -16,6 +16,7 @@
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
+    "lint": "yarn eslint src",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
@@ -23,6 +24,13 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "nwb": "0.23.x",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
