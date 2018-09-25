@@ -1,3 +1,3 @@
-import DonutChart from './DonutChart';
+import DonutChart from './components/DonutChart';
 
 export default DonutChart;
