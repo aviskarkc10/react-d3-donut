@@ -101,7 +101,7 @@ class DonutChart extends Component {
       })
       .attr('d', arc)
       .attr('stroke', 'white')
-      .attr('stroke-width', '3px');
+      .attr('stroke-width', this.props.strokeWidth);
 
     if (this.props.transition) {
       path

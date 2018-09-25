@@ -14,11 +14,12 @@ class Demo extends Component {
   render() {
     return <div>
       <Example
-        innerRadius={9}
-        outerRadius={20}
+        innerRadius={0}
+        outerRadius={50}
         displayCenterText={false}
         transition={true}
         displayTooltip={true}
+        strokeWidth={3}
         data={DONUT_CHART_DATA} />
     </div>;
   }
