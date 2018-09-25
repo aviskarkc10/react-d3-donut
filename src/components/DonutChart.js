@@ -19,11 +19,11 @@ class DonutChart extends Component {
 
   componentDidMount() {
     let data = [...this.props.data];
-    let svg = select('.piechart')
+    let svg = select(`.${this.props.pieClass}`)
       .append('svg')
       .attr('width', this.props.outerRadius * 2)
       .attr('height', this.props.outerRadius * 2)
-      .attr('class', 'pie')
+      .attr('class', this.props.svgClass)
       .append('g');
 
     const translate = {
@@ -77,7 +77,7 @@ class DonutChart extends Component {
     // }
 
     let g = svg
-      .selectAll('pie')
+      .selectAll(this.props.svgClass)
       .data(pie(data))
       .enter()
       .append('g')
@@ -196,9 +196,10 @@ class DonutChart extends Component {
 
   render() {
     return (
-      <div className="piechart" id="arc">
+      <div className={this.props.pieClass} id="arc">
         {this.props.displayTooltip && Object.keys(this.state.selectedArc).length ? (
           <DonutChartToolTip
+            pieClass={this.props.pieClass}
             name={this.state.selectedArc.name || ''}
             count={this.state.selectedArc.count || 0}
             mousePosition={this.state.mousePosition}
