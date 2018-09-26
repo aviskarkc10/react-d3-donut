@@ -196,8 +196,8 @@ class DonutChart extends Component {
 
   render() {
     return (
-      <div className={this.props.pieClass} id="arc">
-        {this.props.displayTooltip && Object.keys(this.state.selectedArc).length ? (
+      <div className={this.props.pieClass} style={{ position: 'relative' }} id="arc">
+        {(this.props.displayTooltip && Object.keys(this.state.selectedArc).length) ? (
           <DonutChartToolTip
             pieClass={this.props.pieClass}
             name={this.state.selectedArc.name || ''}

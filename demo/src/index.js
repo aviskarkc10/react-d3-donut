@@ -65,7 +65,7 @@ class Demo extends Component {
             {`<DonutChart
    innerRadius={90}
    outerRadius={100}
-   transition={true}
+   transition={false}
    svgClass="example2"
    pieClass="pie2"
    displayTooltip={true}
@@ -81,7 +81,7 @@ class Demo extends Component {
           <DonutChart
             innerRadius={90}
             outerRadius={100}
-            transition={false}
+            transition={true}
             displayTooltip={true}
             strokeWidth={0}
             svgClass="example3"
@@ -97,7 +97,7 @@ class Demo extends Component {
    svgClass="example3"
    pieClass="pie3"
    displayTooltip={true}
-   strokeWidth={3}
+   strokeWidth={0}
    data={data} />`}
           </pre>
         </div>
@@ -109,7 +109,7 @@ class Demo extends Component {
           <DonutChart
             innerRadius={0}
             outerRadius={100}
-            transition={false}
+            transition={true}
             displayTooltip={true}
             strokeWidth={3}
             svgClass="example4"
@@ -119,7 +119,7 @@ class Demo extends Component {
         <div style={codeBlock}>
           <pre>
             {`<DonutChart
-   innerRadius={90}
+   innerRadius={0}
    outerRadius={100}
    transition={true}
    svgClass="example4"
@@ -137,7 +137,7 @@ class Demo extends Component {
           <DonutChart
             innerRadius={0}
             outerRadius={100}
-            transition={false}
+            transition={true}
             displayTooltip={false}
             strokeWidth={3}
             svgClass="example5"
@@ -152,7 +152,35 @@ class Demo extends Component {
    transition={true}
    svgClass="example5"
    pieClass="pie5"
-   displayTooltip={false}
+   displayTooltip={true}
+   strokeWidth={3}
+   data={data} />`}
+          </pre>
+        </div>
+      </div>
+      <div style={ exampleContainer }>
+        <h2>6. Smaller inner radius</h2>
+        <div></div>
+        <div style={chartContainer}>
+          <DonutChart
+            innerRadius={70}
+            outerRadius={100}
+            transition={true}
+            displayTooltip={true}
+            strokeWidth={3}
+            svgClass="example6"
+            pieClass="pie6"
+            data={DONUT_CHART_DATA} />
+        </div>
+        <div style={codeBlock}>
+          <pre>
+            {`<DonutChart
+   innerRadius={70}
+   outerRadius={100}
+   transition={true}
+   svgClass="example6"
+   pieClass="pie6"
+   displayTooltip={true}
    strokeWidth={3}
    data={data} />`}
           </pre>
