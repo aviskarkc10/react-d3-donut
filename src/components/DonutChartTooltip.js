@@ -7,7 +7,7 @@ function DonutChartTooltip(props) {
   const container = donutChart.length && donutChart[0].getBoundingClientRect();
   const positionY = mousePosition.y - container.height;
   const positionX = mousePosition.x;
-  const studentCount = `${name} : ${count}`;
+  const studentCount = `${name}: ${count}`;
 
   return (
     <div className="donut-tooltip" style={{ marginLeft: positionX, marginTop: positionY }}>
