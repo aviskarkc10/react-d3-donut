@@ -5,7 +5,7 @@ function DonutChartTooltip(props) {
   const { count, name, mousePosition, pieClass } = props;
   const donutChart = document.getElementsByClassName(pieClass);
   const container = donutChart.length && donutChart[0].getBoundingClientRect();
-  const positionY = mousePosition.y - container.top;
+  const positionY = mousePosition.y - container.height;
   const positionX = mousePosition.x;
   const studentCount = `${name} : ${count}`;
 
