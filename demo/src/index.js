@@ -16,7 +16,7 @@ class Demo extends Component {
   render() {
     return (
       <div>
-        <h1><a className="link" href="https://twitter.com/dog_feelings">Thoughts of dog.</a></h1>
+        <h1>REACT-D3-DONUT</h1>
         <div>
           <h2>Import the component</h2>
           <div className="code-block">{`import DonutChart from 'react-d3-donut';`}</div>
