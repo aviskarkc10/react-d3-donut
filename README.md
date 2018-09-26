@@ -1,6 +1,6 @@
 # React-d3-donut
 
-A React donut chart component using d3.js. Check out the [demos](aviskarkc10.github.io/react-d3-donut).
+A React donut chart component using d3.js. Check out the [demos](https://aviskarkc10.github.io/react-d3-donut).
 
 # Installation
 
@@ -18,7 +18,7 @@ $ yarn add react-d3-donut
 
 ## Usage
 
-Check out the [demo](aviskarkc10.github.io/react-d3-donut) to see how to use the component.
+Check out the [demo](https://aviskarkc10.github.io/react-d3-donut) to see how to use the component.
 
 # Contributing
 
