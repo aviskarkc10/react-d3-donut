@@ -1,4 +1,4 @@
-import '../assets/styles/style.scss';
+import '../assets/styles/style.css';
 
 import * as shape from 'd3-shape';
 import React, { Component } from 'react';
