@@ -8,10 +8,10 @@ function DonutChartTooltip(props) {
   const positionY = mousePosition.y - container.height;
   const positionX = mousePosition.x;
   const studentCount = `${name}: ${count}`;
-  const donutStyle = tooltipClass || 'donut-tooltip'; 
+  const tooltipStyle = tooltipClass || 'donut-tooltip'; 
 
   return (
-    <div className={donutStyle} style={{ marginLeft: positionX, marginTop: positionY }}>
+    <div className={tooltipStyle} style={{ marginLeft: positionX, marginTop: positionY }}>
       {studentCount}
     </div>
   );
