@@ -200,6 +200,7 @@ class DonutChart extends Component {
         {(this.props.displayTooltip && Object.keys(this.state.selectedArc).length) ? (
           <DonutChartToolTip
             pieClass={this.props.pieClass}
+            donutClass={this.props.donutClass}
             name={this.state.selectedArc.name || ''}
             count={this.state.selectedArc.count || 0}
             mousePosition={this.state.mousePosition}
@@ -218,6 +219,7 @@ DonutChart.propTypes = {
   svgClass: string.isRequired,
   pieClass: string.isRequired,
   transition: bool,
+  donutClass: string,
   displayTooltip: bool
 };
 
