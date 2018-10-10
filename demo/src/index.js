@@ -11,6 +11,7 @@ import WithoutTooltip from './WithoutTooltip';
 import SmallerInnerRadius from './SmallInnerRadius';
 import WithoutTransition from './WithoutTransition';
 import WithoutStrokeWidth from './WithoutStrokeWidth';
+import WithCustomTooltipClass from './WithCustomTooltipClass';
 
 class Demo extends Component {
   render() {
@@ -31,6 +32,7 @@ class Demo extends Component {
         <PieChart />
         <WithoutTooltip />
         <SmallerInnerRadius />
+        <WithCustomTooltipClass />
       </div>
     );
   }

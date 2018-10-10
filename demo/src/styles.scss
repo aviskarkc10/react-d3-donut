@@ -42,6 +42,13 @@ table {
       border-right: 1px solid;
       border-bottom: 1px solid;      
     }
-  }
-  
+  }  
+}
+
+.custom-tooltip {
+	padding: 10px;
+	color: white;
+	position: absolute;
+	background-color: rgba(255,0,0,0.5);	
+	border-radius: 5px;
 }
