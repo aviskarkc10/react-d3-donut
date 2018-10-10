@@ -62,6 +62,12 @@ function PropsTable() {
             <td>boolean</td>
             <td>false</td>
           </tr>
+          <tr>
+            <td>tooltipClass</td>
+            <td>Use a custom style for your tooltip</td>
+            <td>string</td>
+            <td>false</td>
+          </tr>
         </tbody>
       </table>
     </Fragment>
