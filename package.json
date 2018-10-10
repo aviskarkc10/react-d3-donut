@@ -1,6 +1,6 @@
 {
   "name": "react-d3-donut",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A react donut chart component using d3",
   "main": "lib/index.js",
   "module": "es/index.js",
