@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import { transition } from 'd3-transition';
 import { select, event } from 'd3-selection';
 import { interpolate } from 'd3-interpolate';
+import { bool, array, number, string } from 'prop-types';
 
 import DonutChartToolTip from './DonutChartTooltip';
 
@@ -30,7 +31,6 @@ class DonutChart extends Component {
       x: this.props.outerRadius,
       y: this.props.outerRadius
     };
-    let totalCount = 0;
     let arc = shape
       .arc()
       .outerRadius(this.props.outerRadius)
@@ -211,6 +211,14 @@ class DonutChart extends Component {
 }
 
 DonutChart.propTypes = {
+  data: array.isRequired,
+  outerRadius: number.isRequired,
+  innerRadius: number.isRequired,
+  strokeWidth: number.isRequired,
+  svgClass: string.isRequired,
+  pieClass: string.isRequired,
+  transition: bool,
+  displayTooltip: bool
 };
 
 export default DonutChart;
